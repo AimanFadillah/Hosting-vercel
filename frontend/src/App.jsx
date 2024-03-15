@@ -2,7 +2,7 @@ function App() {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    const response = await fetch("http://localhost:5000/upload",{
+    const response = await fetch("https://hosting-vercel-peach.vercel.app/upload",{
       method:"post",
       body:new FormData(e.target),
     })
